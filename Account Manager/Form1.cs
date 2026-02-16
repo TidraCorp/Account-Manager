@@ -44,6 +44,11 @@ namespace Account_Manager
                 Button btn = new Button();
                 btn.Text = account.Name;
                 btn.Size = new Size(150, 40);
+                btn.BackColor = ColorTranslator.FromHtml("#C8AA6E");
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderColor = Color.White;
+                btn.FlatAppearance.BorderSize = 3;
+
 
                 btn.Tag = account;
 
