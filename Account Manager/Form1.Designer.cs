@@ -39,9 +39,9 @@
             this.Title.ForeColor = System.Drawing.Color.White;
             this.Title.Location = new System.Drawing.Point(20, 20);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(726, 32);
+            this.Title.Size = new System.Drawing.Size(263, 32);
             this.Title.TabIndex = 0;
-            this.Title.Text = "Veuillez séléctionner un compte pour vous connecter:";
+            this.Title.Text = "Choisis un compte";
             // 
             // buttonsFlowLayoutPanel
             // 

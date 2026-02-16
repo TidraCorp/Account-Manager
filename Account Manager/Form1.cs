@@ -109,6 +109,15 @@ namespace Account_Manager
             {
                 AddAccountForm addForm = new AddAccountForm();
 
+                addForm.StartPosition = FormStartPosition.Manual;
+
+                Point buttonScreenPosition = btn.PointToScreen(Point.Empty);
+
+                int x = buttonScreenPosition.X + btn.Width;
+                int y = buttonScreenPosition.Y + btn.Height;
+
+                addForm.Location = new Point(x, y);
+
                 if (addForm.ShowDialog() == DialogResult.OK)
                 {
                     AddAccountInJson(addForm.UpdateName, addForm.UpdateUsername, addForm.UpdatePassword);
@@ -121,6 +130,15 @@ namespace Account_Manager
             if (sender is Button btn && btn.Tag is AccountData account)
             {
                 EditAccountForm editForm = new EditAccountForm(account.Name, account.Username, account.Password);
+
+                editForm.StartPosition = FormStartPosition.Manual;
+
+                Point buttonScreenPosition = btn.PointToScreen(Point.Empty);
+
+                int x = buttonScreenPosition.X + btn.Width;
+                int y = buttonScreenPosition.Y + btn.Height;
+
+                editForm.Location = new Point(x, y);
 
                 if (editForm.ShowDialog() == DialogResult.OK)
                 {
